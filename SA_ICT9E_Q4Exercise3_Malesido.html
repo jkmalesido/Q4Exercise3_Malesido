@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>JavaScript Variables</title>
+	<style type="text/css">
+		body{
+			background-color: #643E76;
+		}
+		h1, p, ul, li{
+			color: #FFFFFF;
+			font-family: 'DynaPuff', cursive;
+		}
+		h1, p{
+			text-align: center;
+		}
+		h1{
+			font-size: 55px;
+			text-decoration: underline;
+		}
+		p, ul{
+			font-size: 35px;
+		}
+		hr{
+			width: 100%;
+			background-color: #FFFFFF;
+		}
+		div{
+			border-color: #FFFFFF;
+			border-style: dashed;
+			background-color: #8D54A8;
+		}
+	</style>
+</head>
+<body>
+<br><br>
+<div class="container">
+	<br>
+	<h1>JavaScript Arithmetic Operators</h1>
+	<br>
+	<p><mark>x = 10, y = 5;</mark></p>
+	<ul type="1">
+		
+		<li>x + y = <strong id="p1"></strong></li>
+		<li>x - y = <strong id="p2"></strong></li>
+		<li>x * y = <strong id="p3"></strong></li>
+		<li>x / y = <strong id="p4"></strong></li>
+		<li>y % 10 = <strong id="p5"></strong></li>
+
+	</ul>
+
+	<script type="text/javascript">
+		let x = 10, y = 5;
+
+		let sum = x + y;
+		let diff = x - y;
+		let product = x * y;
+		let quotient = x / y;
+		let modulus = y % 10;
+
+		alert('Loading ! Arithmetic Operators')
+
+		//variable declaration;assignment of values
+		document.getElementById("p1").innerHTML = x + y;
+		document.getElementById("p2").innerHTML = x - y;
+		document.getElementById("p3").innerHTML = x * y;
+		document.getElementById("p4").innerHTML = x / y;
+		document.getElementById("p5").innerHTML = y % 10;
+	</script>
+	<br>
+</div>
+</body>
+</html>
